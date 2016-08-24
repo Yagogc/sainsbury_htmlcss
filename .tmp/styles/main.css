@@ -1,0 +1,17 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto; }
+
+header {
+  height: 70px; }
+  header picture {
+    height: 70px; }
+  header img {
+    height: 70px;
+    display: inline-block; }
+  header h1 {
+    display: inline-block; }
+  header div {
+    display: inline-block; }
