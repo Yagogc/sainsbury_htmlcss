@@ -1,0 +1,108 @@
+
+.menu {
+    display: block;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.07);
+    background: $background-color-nav;
+    @media (min-width: $desktop-view) {
+        margin-left: -$padding-body-sides-desktop;
+        margin-right: -$padding-body-sides-desktop;
+        height: auto;
+    }
+
+    &__toggler {
+        cursor: pointer;
+        width: 100%;
+        display: block;
+        padding: $padding-nav;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        
+        @media (min-width: $desktop-view) {
+            display: none;
+        }
+
+        &__icon {
+            display: inline-block;
+            margin-left: 5px;
+            transform: rotate(270deg);
+            transition: transform 0.3s ease;
+        }
+    }
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        @media (min-width: $desktop-view) {
+            height: auto;
+            text-align: center;
+            li {
+                display: inline-block;
+            }
+        }
+
+        &__item {
+            padding: $padding-nav;
+            display: block;
+            font-size: $font-size-nav;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            line-height: 1;
+            color: white;
+
+            @media (min-width: $desktop-view) {
+                display: inline-block;
+                width: auto;
+                position: relative;
+
+                &:after {
+                    content: '';
+                    height: 4px;
+                    display: block;
+                    position: absolute;
+                    width: 0;
+                    bottom: 0;
+                    left: 50%;
+                    transition: all 0.3s ease;
+                    background: darken($background-color-nav, 10%);
+                    z-index: 9999;
+                }
+
+                &:hover:after {
+                    width: 100%;
+                    left: 0;
+                }
+            }
+
+            &:hover {
+                background: lighten($background-color-nav, 5%);
+            }
+
+            &:visited {
+                color: white;
+            }
+        }
+    }
+}
+
+
+// ACCORDION CHECKBOX ANIMATION
+
+#toggler {
+    display: none;
+    &:checked ~ .menu__toggler .menu__toggler__icon {
+        display: inline-block;
+        transform: rotate(90deg);
+    }
+    &:checked ~ .menu__list {
+        font-size: $font-size-nav;
+        height: calc(( #{$font-size-nav} + ( #{$padding-nav} * 2))*6);
+        // HEIGHT AUTOCALCULATED, JUST CHANGE THE LAST DIGIT TO THE NUMBER OF LIST ITEMS.
+        transition: all 0.3s ease;
+
+    }
+}

@@ -1,1 +1,46 @@
+// BASE
+
 $font-family_main: 'Open Sans', sans-serif;
+$font-family_secondary: 'Righteous', cursive;
+
+$desktop-view: 768px;
+
+$color-links: #727EC3;
+
+$padding-body-sides-mobile: 30px;
+$padding-body-sides-desktop: 60px;
+
+//HEADER
+
+$height-header: 70px;
+$color-fb:#3B5998;
+$color-tw:#1DA1F2;
+$color-gplus:#DB4437;
+
+
+// NAV
+
+$background-color-nav: #6ab344;
+$font-size-nav: 16px;
+$padding-nav: 20px;
+
+//MAIN
+
+$margin-articles: 10px;
+
+
+
+// MISC
+
+.article-header {
+    margin: 0;
+    padding: 10px;
+    background: #E1E4E6;
+    color: #727EC3;
+    transition: background 0.8s ease;
+    height: auto;
+
+    h2 {
+        margin: 0;
+    }
+}
