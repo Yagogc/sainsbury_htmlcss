@@ -39,8 +39,10 @@
         @media (min-width: $desktop-view) {
             height: auto;
             text-align: center;
+            display: flex;
             li {
                 display: inline-block;
+                flex-grow: 1;
             }
         }
 
@@ -56,7 +58,7 @@
 
             @media (min-width: $desktop-view) {
                 display: inline-block;
-                width: auto;
+                width: 100%;
                 position: relative;
 
                 &:after {

@@ -9,7 +9,7 @@ footer {
     .footer {
         height: $height-header;
         background: $background-color-page;
-        border: 2px solid $background-color-nav;
+        border: 2px solid darken($background-color-page, 10%);
         border-bottom: none;
         width: 100%;
     }
