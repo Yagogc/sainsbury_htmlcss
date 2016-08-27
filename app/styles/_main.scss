@@ -11,7 +11,7 @@ main {
     .main-article {
         width: 100%;
         margin: 10px;
-        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
+        box-shadow: $shadow-article;
 
         &__header {
             @extend .article-header;
@@ -32,6 +32,10 @@ main {
                 &__more {
                     margin-top: 1em;
                     min-width: 140px;
+
+                    strong {
+                        margin-left: 15px;
+                    }
                 }
             }
         }
@@ -44,15 +48,19 @@ main {
         }
 
         &__article {
-            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
+            box-shadow: $shadow-article;
             margin-bottom: 10px;
 
             &__header {
                 @extend .article-header;
             }
 
-            &:hover header{
-                background-color: white;
+            &:hover {
+                box-shadow: $shadow-article-hover;
+
+                header{
+                    background-color: white;
+                }
             }
         }
     }

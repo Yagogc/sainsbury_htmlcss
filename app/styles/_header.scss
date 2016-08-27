@@ -16,7 +16,7 @@ header {
                 border-radius: 50%;
             }
         }
-        
+
         &_text {
             margin: 0 0 0 10px;
             height: 100%;
@@ -52,12 +52,12 @@ header {
             height: 100%;
             border-radius: 50%;
             overflow: hidden;
-            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: $shadow-icon;
             transition: all 0.3s ease;
             margin:0 10px;
 
             &:hover {
-                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.8);
+                box-shadow: $shadow-icon-hover;
             }
 
             svg {
