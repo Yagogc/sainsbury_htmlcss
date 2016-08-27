@@ -22,6 +22,18 @@ main {
         &__content {
             padding: 10px;
             background: white;
+
+            @media (min-width: $desktop-view) {
+                display: flex;
+
+                &__p {
+                    flex-grow: 1;
+                }
+                &__more {
+                    margin-top: 1em;
+                    min-width: 140px;
+                }
+            }
         }
     }
     .sidebar {
