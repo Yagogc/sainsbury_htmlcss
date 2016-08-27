@@ -12,7 +12,9 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 0 $padding-body-sides-mobile;
+    padding-bottom: $height-header;
     background: #ECEFF1;
+    position: relative;
     @media (min-width: $desktop-view) {
         padding: 0 $padding-body-sides-desktop;
     }

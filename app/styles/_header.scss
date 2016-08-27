@@ -16,6 +16,7 @@ header {
                 border-radius: 50%;
             }
         }
+        
         &_text {
             margin: 0 0 0 10px;
             height: 100%;
@@ -34,11 +35,12 @@ header {
     .social__icons {
         height: $height-header;
         padding: 10px 0;
-        position: fixed;
+        position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
         text-align: center;
+        z-index: 10;
 
         @media (min-width: $desktop-view){
             float: right;

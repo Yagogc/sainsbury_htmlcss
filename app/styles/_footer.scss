@@ -1,0 +1,22 @@
+footer {
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0;
+    left: $padding-body-sides-mobile;
+    right:$padding-body-sides-mobile;
+    z-index: 1 ;
+
+    .footer {
+        height: $height-header;
+        background: $background-color-page;
+        border: 2px solid $background-color-nav;
+        border-bottom: none;
+        width: 100%;
+    }
+
+    @media (min-width: $desktop-view) {
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+}
