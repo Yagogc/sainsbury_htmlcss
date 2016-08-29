@@ -10,11 +10,13 @@ This website is a test for an interview. For a quicker set up and development I 
 
 | Resources                                | Comentary                                                                                                                                                                                                                                                     |
 |----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Google Web Starter Kit](https://developers.google.com/web/tools/starter-kit/) | Removed the mini CSS framework included. | [Twitter Bootstrap](http://getbootstrap.com/) | CSS framework.
+| [Google Web Starter Kit](https://developers.google.com/web/tools/starter-kit/) | Used for a quick gulp configuration. Removed the mini CSS framework included. |
 | [Fill Murray](http://www.fillmurray.com/) | Used to get quick image assets 
 | [Simple Icons](https://simpleicons.org/) | Used for the social icons.
 | [CopyPasteCharacter](http://www.copypastecharacter.com/) | Used for the menu arrow.
-| [Gulp](http://gulpjs.com/) | Used for minification, concatenation, Sass compilation...
+| [Gulp](http://gulpjs.com/) | Used for minification, concatenation, Sass compilation, etc
+| [Google Fonts](https://fonts.google.com/) | 
+| [Normalize.css](https://necolas.github.io/normalize.css/) | 
 
 ## TESTED ON:
 
